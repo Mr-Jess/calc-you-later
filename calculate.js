@@ -25,15 +25,16 @@ function calculate(num1, num2, operation) {
     return actualNum1 % actualNum2;
     } else if (operation==='mod') {
     return actualNum1 % actualNum2;
-    } else {
+    } else if (operation==='added to') {
+    return actualNum1 + actualNum2;
+    } else if (operation==='subtracted from') {
+    return actualNum1 - actualNum2;
+    } else if (operation==='multiplied by') {
+    return actualNum1 * actualNum2;
+    } else if (operation==='divided by') {
+    return actualNum1 / actualNum2;
+    }
     return "Sorry, that's not a mathematical operation!"
-    } 
-
-
-
-
 }
 
-
 module.exports = calculate;
-
